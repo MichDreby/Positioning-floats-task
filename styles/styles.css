@@ -1,0 +1,180 @@
+*{
+	box-sizing: border-box;
+}
+@font-face {
+    font-family: "MyriadProRegular";
+    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
+    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+    url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+body{
+	margin: 0;
+	height: 2000px;
+	font-family:MyriadProRegular,Arial,sans-serif;
+	line-height: normal;
+}
+
+.wrapper{
+	margin: auto;
+	margin-top: 200px;
+	width: 563px;
+	min-height: 790px;
+	position: relative;
+}
+
+.pages{
+	width: 523px;
+	height: 750px;
+	border: solid 2px;
+}
+.top-page{
+	padding: 37px 32px;
+	position: absolute;
+	background: #ebebeb;
+	z-index: 3;
+}
+.middle-page{
+	position: absolute;
+	background: #cccccc;
+	top: 20px;
+	left: 21px;
+	z-index: 2;
+}
+.bottom-page{
+	position: absolute;
+	background: #acacac;
+	top: 40px;
+	left: 40px;
+	z-index: 1;
+}
+
+p{
+	font-size: 12px;
+	margin: 0;
+	margin-bottom: 15px;
+}
+
+
+h1{
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: normal;
+	margin: 0;
+	margin-bottom: 15px;
+}
+h2{
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: normal;
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
+
+.cup{
+	float: left;
+	margin-right: 21px;
+	margin-bottom: 10px;
+}
+.notebook{
+	margin-left: 3px;
+	float: right;
+}
+
+.css-inf::after{
+	content:'.'; 
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+.left-floated-joke{
+	float: left;
+	margin-top: 15px;
+}
+.right-floated-joke{
+	float: right;
+	margin-top: 15px;
+}
+
+figure{
+	margin: 0;
+}
+figure::after{
+	content:'.'; 
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+footer{
+	position: absolute;
+	max-width: 455px;
+	font-size: 9px;
+	text-align: center;
+	bottom: 48px;
+}
+
+.bookmarks{
+	position: absolute;
+	width: 99px;
+	height: 35px;
+	border: solid 2px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.top-bookmark{
+	background: #f68e56;
+	width: 111px;
+	top: 40px;
+	right: -84px;
+}
+.middle-bookmark{
+	background: #39b54a;
+	top: 43px;
+	right: -50px;
+}
+.bottom-bookmark{
+	background: #00aeef;
+	top: 48px;
+	right: -18px;
+}
+
+.social-links-container{
+	background: #fbaf5d;
+	width: 89px;
+	height: 71px;
+	border: 1px solid;
+	position: fixed;
+	bottom: 281px;
+	right: 0;
+	text-align: center;
+}
+
+.social-links-container p{
+	font-size: 16px;
+	margin-top: 6px;
+	margin-bottom: 8px;
+}
+.social-links{
+	height: 22px;
+}
+.icons{
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	background-image: url(../images/icons.png);
+	background-repeat: no-repeat;
+}
+.twitter-link{
+	background-position: -28px 0;
+}
+.instagram-link{
+	background-position: -57px 0;
+}
