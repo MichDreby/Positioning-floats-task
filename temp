@@ -1,11 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root" class="wrapper">
+        <section class="rs-calendar">
+            <nav class="clndr-nav relative clear-fix">
+                <div class="nav-ctn fl-left">
+                    <ul>
+                        <li class="nav-btn text-center"><a href="#">today</a></li>
+                        <li class="nav-btn text-center"><a href="#">prev</a></li>
+                        <li class="nav-btn text-center"><a href="#">next</a></li>
+                    </ul>
+                </div>
+                <div class="nav-ctn abs-center">
+                    <p class="selectedDate">Date</p>
+                </div>
+                <div class="nav-ctn fl-right">
+                    <ul>
+                        <li class="nav-btn text-center"><a href="#">Month</a></li>
+                        <li class="nav-btn text-center"><a href="#">Week</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="clndr-area">
+                <div class="clndr-header">
+                    <div class="clndr-row clear-fix">
+                        <div class="clndr-cell hdr-cell fl-left"><p>Sun</p></div>
+                        <div class="clndr-cell hdr-cell fl-left"><p>Mon</p></div>
+                        <div class="clndr-cell hdr-cell fl-left"><p>Tue</p></div>
+                        <div class="clndr-cell hdr-cell fl-left"><p>Wed</p></div>
+                        <div class="clndr-cell hdr-cell fl-left"><p>Thu</p></div>
+                        <div class="clndr-cell hdr-cell fl-left"><p>Fri</p></div>
+                        <div class="clndr-cell hdr-cell fl-left"><p>Sat</p></div>
+                    </div>
+                </div>
+                <div class="clndr-row-ctn">
+                    <div class="clndr-row clear-fix">
+                        <div class="clndr-cell fl-left">1</div>
+                        <div class="clndr-cell fl-left">1</div>
+                        <div class="clndr-cell fl-left relative">
+                            <p class="cell-date-numb absolute">30</p>
+                            <div class="cell-evt hght-3 first-evt">
+                                <h4 class="cell-evt-hdr">Webinar</h4>
+                                <p class="cell-evt-time">19.30</p>
+                            </div>
+                            <div class="cell-evt hght-3 second-evt">
+                                <h4 class="cell-evt-hdr">Workshop</h4>
+                                <p class="cell-evt-time">12.30</p>
+                            </div>
+                            <div class="cell-evt hght-3 third-evt">
+                                <h4 class="cell-evt-hdr">Deadline</h4>
+                                <p class="cell-evt-time">12.30</p>
+                            </div>
+                        </div>
+                        <div class="clndr-cell fl-left">1</div>
+                        <div class="clndr-cell fl-left">1</div>
+                        <div class="clndr-cell fl-left">1</div>
+                        <div class="clndr-cell fl-left">1</div>
+                    </div>
+                    <div class="clndr-row clear-fix">
+                        <div class="clndr-cell fl-left">1</div>
+                        <div class="clndr-cell fl-left">1</div>
+                        <div class="clndr-cell fl-left">1</div>
+                        <div class="clndr-cell fl-left">1</div>
+                        <div class="clndr-cell fl-left">1</div>
+                        <div class="clndr-cell fl-left">1</div>
+                        <div class="clndr-cell fl-left">1</div>
+                    </div>
+                    <div class="clndr-row clear-fix">
+                        <div class="clndr-cell fl-left">1</div>
+                        <div class="clndr-cell fl-left">1</div>
+                        <div class="clndr-cell fl-left">1</div>
+                        <div class="clndr-cell fl-left">1</div>
+                        <div class="clndr-cell fl-left">1</div>
+                        <div class="clndr-cell fl-left">1</div>
+                        <div class="clndr-cell fl-left">1</div>
+                    </div>
+                    <div class="clndr-row clear-fix">
+                        <div class="clndr-cell fl-left">1</div>
+                        <div class="clndr-cell fl-left">1</div>
+                        <div class="clndr-cell fl-left">1</div>
+                        <div class="clndr-cell fl-left">1</div>
+                        <div class="clndr-cell fl-left">1</div>
+                        <div class="clndr-cell fl-left">1</div>
+                        <div class="clndr-cell fl-left">1</div>
+                    </div>
+                    <div class="clndr-row clear-fix">
+                        <div class="clndr-cell fl-left">1</div>
+                        <div class="clndr-cell fl-left">1</div>
+                        <div class="clndr-cell fl-left">1</div>
+                        <div class="clndr-cell fl-left">1</div>
+                        <div class="clndr-cell fl-left">1</div>
+                        <div class="clndr-cell fl-left">1</div>
+                        <div class="clndr-cell fl-left">1</div>
+                    </div>
+                    <div class="clndr-row clear-fix">
+                        <div class="clndr-cell fl-left">1</div>
+                        <div class="clndr-cell fl-left">1</div>
+                        <div class="clndr-cell fl-left">1</div>
+                        <div class="clndr-cell fl-left">1</div>
+                        <div class="clndr-cell fl-left">1</div>
+                        <div class="clndr-cell fl-left">1</div>
+                        <div class="clndr-cell fl-left">1</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
+
+
+
+*************************************   STYLE   ********************************************
+
+
 * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-body{
-    font-family: Verdana, Arial, sans-serif;
+body {
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     /*background-color: #f1f5fb;*/
     color: #fff;
@@ -28,7 +154,7 @@ h1, h2, h3, h4, h5 {
 .clndr-nav{
     margin-bottom: 20px;
 }
-.nav-ctn .nav-btn{
+.nav-ctn .nav-btn {
     list-style-type: none;
     display: inline-block;
     min-width: 40px;
@@ -39,38 +165,39 @@ h1, h2, h3, h4, h5 {
     border-radius: 3px;
     border-color: #aaa;
 }
-.nav-ctn .nav-btn:hover{
+.nav-ctn .nav-btn:hover {
     cursor: pointer;
     background-color: #ddd;
 }
-.nav-ctn .nav-btn>a{
+.nav-ctn .nav-btn>a {
     padding: 0 5px;
     line-height: 30px;
 }
-.nav-ctn .active-nav-type{
+.nav-ctn .active-nav-type {
     background-color: #aaa;
 }
 /**********************************/
-.clndr-header{
-    /*margin-bottom: 50px;*/
-}
-.hdr-col{
+.clndr-header .hdr-cell {
     height: 30px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
 }
 /**********************************/
-.clndr-area{
+.clndr-area {
     /*border: 1px solid #aaa;*/
+}
+.clndr-row-ctn {
+    /* margin-top: -10px; */
 }
 
 
-
-
-.clndr-cell{
+.clndr-cell {
     width: -webkit-calc(100%/7);
     width: -moz-calc(100%/7);
     width: -o-calc(100%/7);
-    background-color: #5d5d5d;
-    font-family: 'Open Sans', sans-serif;
 }
 .clndr-cell .cell-date-numb {
     font-size: 20px;
@@ -122,20 +249,28 @@ h1, h2, h3, h4, h5 {
 
 
 
-.clndr-cell:not(.hdr-col){
-    border-top: 12.5px solid #fff;
-    border-bottom: 12.5px solid #fff;
+.clndr-cell:not(.hdr-cell) {
+    background-color: #666465;
+    height: 150px;
+    border-top: 10px solid #fff;
+    border-bottom: 10px solid #fff;
     border-left: 3px solid #fff;
     border-right: 3px solid #fff;
-
 }
-.clndr-cell.current-day{
+.clndr-cell:first-child {
+    border-left: none;
+}
+.clndr-cell:last-child {
+    border-right: none;
+}
+.clndr-row:first-child .clndr-cell {
+    /*border-top: none;*/
+}
+
+.clndr-cell.current-day {
     border: 5px solid #aaa;
     background-color: #dadada;
     font-weight: 600;
-}
-.clndr-cell:not(.hdr-col){
-    height: 150px;
 }
 .clndr-cell.week-nav-type {
     height: 500px;
@@ -143,7 +278,7 @@ h1, h2, h3, h4, h5 {
 .clndr-cell.another-month {
     color: #aaa;
 }
-.clndr-cell:not(.hdr-col):hover{
+.clndr-cell:not(.hdr-cell):hover{
     /*background-color: #dad8d8;*/
 }
 /**********************************/
@@ -175,123 +310,3 @@ h1, h2, h3, h4, h5 {
 	height: 0;
 	visibility: hidden;
 }
-
-
-*******************************************************************
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <title>Document</title>
-</head>
-<body>
-    <div id="root" class="wrapper">
-        <section class="rs-calendar">
-            <nav class="clndr-nav relative clear-fix">
-                <div class="nav-ctn fl-left">
-                    <ul>
-                        <li class="nav-btn text-center"><a href="#">today</a></li>
-                        <li class="nav-btn text-center"><a href="#">prev</a></li>
-                        <li class="nav-btn text-center"><a href="#">next</a></li>
-                    </ul>
-                </div>
-                <div class="nav-ctn abs-center">
-                    <p class="selectedDate">Date</p>
-                </div>
-                <div class="nav-ctn fl-right">
-                    <ul>
-                        <li class="nav-btn text-center"><a href="#">Month</a></li>
-                        <li class="nav-btn text-center"><a href="#">Week</a></li>
-                    </ul>
-                </div>
-            </nav>
-            <div class="clndr-area">
-                <div class="clndr-header">
-                    <div class="clndr-row clear-fix">
-                        <div class="clndr-cell hdr-col fl-left"><p>Sun</p></div>
-                        <div class="clndr-cell hdr-col fl-left"><p>Mon</p></div>
-                        <div class="clndr-cell hdr-col fl-left"><p>Tue</p></div>
-                        <div class="clndr-cell hdr-col fl-left"><p>Wed</p></div>
-                        <div class="clndr-cell hdr-col fl-left"><p>Thu</p></div>
-                        <div class="clndr-cell hdr-col fl-left"><p>Fri</p></div>
-                        <div class="clndr-cell hdr-col fl-left"><p>Sat</p></div>
-                    </div>
-                </div>
-                <div class="clndr-row clear-fix">
-                    <div class="clndr-cell fl-left">1</div>
-                    <div class="clndr-cell fl-left">1</div>
-                    <div class="clndr-cell fl-left relative">
-                        <p class="cell-date-numb absolute">30</p>
-                        <div class="cell-evt hght-3 first-evt">
-                            <h4 class="cell-evt-hdr">Webinar</h4>
-                            <p class="cell-evt-time">19.30</p>
-                        </div>
-                        <div class="cell-evt hght-3 second-evt">
-                            <h4 class="cell-evt-hdr">Workshop</h4>
-                            <p class="cell-evt-time">12.30</p>
-                        </div>
-                        <div class="cell-evt hght-3 third-evt">
-                            <h4 class="cell-evt-hdr">Deadline</h4>
-                            <p class="cell-evt-time">12.30</p>
-                        </div>
-                    </div>
-                    <div class="clndr-cell fl-left">1</div>
-                    <div class="clndr-cell fl-left">1</div>
-                    <div class="clndr-cell fl-left">1</div>
-                    <div class="clndr-cell fl-left">1</div>
-                </div>
-                <div class="clndr-row clear-fix">
-                    <div class="clndr-cell fl-left">1</div>
-                    <div class="clndr-cell fl-left">1</div>
-                    <div class="clndr-cell fl-left">1</div>
-                    <div class="clndr-cell fl-left">1</div>
-                    <div class="clndr-cell fl-left">1</div>
-                    <div class="clndr-cell fl-left">1</div>
-                    <div class="clndr-cell fl-left">1</div>
-                </div>
-                <div class="clndr-row clear-fix">
-                    <div class="clndr-cell fl-left">1</div>
-                    <div class="clndr-cell fl-left">1</div>
-                    <div class="clndr-cell fl-left">1</div>
-                    <div class="clndr-cell fl-left">1</div>
-                    <div class="clndr-cell fl-left">1</div>
-                    <div class="clndr-cell fl-left">1</div>
-                    <div class="clndr-cell fl-left">1</div>
-                </div>
-                <div class="clndr-row clear-fix">
-                    <div class="clndr-cell fl-left">1</div>
-                    <div class="clndr-cell fl-left">1</div>
-                    <div class="clndr-cell fl-left">1</div>
-                    <div class="clndr-cell fl-left">1</div>
-                    <div class="clndr-cell fl-left">1</div>
-                    <div class="clndr-cell fl-left">1</div>
-                    <div class="clndr-cell fl-left">1</div>
-                </div>
-                <div class="clndr-row clear-fix">
-                    <div class="clndr-cell fl-left">1</div>
-                    <div class="clndr-cell fl-left">1</div>
-                    <div class="clndr-cell fl-left">1</div>
-                    <div class="clndr-cell fl-left">1</div>
-                    <div class="clndr-cell fl-left">1</div>
-                    <div class="clndr-cell fl-left">1</div>
-                    <div class="clndr-cell fl-left">1</div>
-                </div>
-                <div class="clndr-row clear-fix">
-                    <div class="clndr-cell fl-left">1</div>
-                    <div class="clndr-cell fl-left">1</div>
-                    <div class="clndr-cell fl-left">1</div>
-                    <div class="clndr-cell fl-left">1</div>
-                    <div class="clndr-cell fl-left">1</div>
-                    <div class="clndr-cell fl-left">1</div>
-                    <div class="clndr-cell fl-left">1</div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-</body>
-</html>
